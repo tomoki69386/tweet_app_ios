@@ -1,16 +1,30 @@
 PODS:
   - Alamofire (4.7.3)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - SnapKit (4.2.0)
+  - SwiftyUserDefaults (3.0.1)
 
 DEPENDENCIES:
   - Alamofire
+  - SDWebImage
+  - SnapKit
+  - SwiftyUserDefaults
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - SDWebImage
+    - SnapKit
+    - SwiftyUserDefaults
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftyUserDefaults: 3d273b1739b68ada3145dc754a70ec775bc5c8be
 
-PODFILE CHECKSUM: f73a2d1b152a42b8471ef277a6de07f17ebb1d2e
+PODFILE CHECKSUM: 011c5f602fbbf1434f43a758ac754ebad39e1c94
 
 COCOAPODS: 1.5.3

@@ -8,5 +8,8 @@ target 'tweet' do
   # Pods for tweet
 
   pod 'Alamofire'
+  pod 'SnapKit'
+  pod 'SDWebImage'
+  pod 'SwiftyUserDefaults'
 
 end

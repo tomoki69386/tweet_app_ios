@@ -8,14 +8,17 @@
 
 import UIKit
 import Alamofire
+import SDWebImage
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var ImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         let params: [String: String] = [
-            "id": "2"
+            "id": "3"
         ]
         Alamofire.request(APIConst.ProfileUrl, parameters: params).responseJSON {response in
             switch response.result {
@@ -23,6 +26,8 @@ class ViewController: UIViewController {
                 let decoder = JSONDecoder()
                 let result = try! decoder.decode(ProfileModel.self, from: response.data!)
                 print(result.name)
+                let imageURL = URL(string: APIConst.userImage + result.image_name)
+                self.ImageView.sd_setImage(with: imageURL)
             case .failure:
                 print("error")
             }
