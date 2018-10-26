@@ -11,8 +11,8 @@ import Alamofire
 
 class LoginViewController: UIViewController {
     
-    @IBOutlet weak var mailTextField: UITextField!
-    @IBOutlet weak var passTextField: UITextField!
+    @IBOutlet weak var mailTextField: InputField!
+    @IBOutlet weak var passTextField: InputField!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var label: UILabel!
 
@@ -25,20 +25,10 @@ class LoginViewController: UIViewController {
     
     private func setUI() {
         mailTextField.placeholder = "メールアドレス"
-        mailTextField.textAlignment = .center
-        mailTextField.layer.borderWidth = 1
-        mailTextField.layer.borderColor = UIColor.gray.cgColor
-        mailTextField.backgroundColor = .white
-        mailTextField.layer.cornerRadius = mailTextField.frame.height / 2
         mailTextField.delegate = self
         mailTextField.keyboardType = .emailAddress
         
         passTextField.placeholder = "パスワード"
-        passTextField.textAlignment = .center
-        passTextField.layer.borderWidth = 1
-        passTextField.layer.borderColor = UIColor.gray.cgColor
-        passTextField.backgroundColor = .white
-        passTextField.layer.cornerRadius = passTextField.frame.height / 2
         passTextField.delegate = self
         passTextField.keyboardType = .namePhonePad
 
@@ -48,8 +38,8 @@ class LoginViewController: UIViewController {
         loginButton.layer.cornerRadius = loginButton.frame.height / 2
         
         label.textColor = .main
+        label.text = ""
         label.font = UIFont.systemFont(ofSize: 15)
-        label.text = "メールアドレスを入力してください"
         
         view.backgroundColor = .bg
     }

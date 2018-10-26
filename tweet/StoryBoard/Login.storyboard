@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oQI-t4-HHc">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oQI-t4-HHc" customClass="InputField" customModule="tweet" customModuleProvider="target">
                                 <rect key="frame" x="39" y="398" width="298" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.93012005949999998" blue="0.1583358188" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -28,7 +28,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5QA-3A-0Fg">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5QA-3A-0Fg" customClass="InputField" customModule="tweet" customModuleProvider="target">
                                 <rect key="frame" x="39" y="478" width="298" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.93012005949999998" blue="0.1583358188" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -77,9 +77,9 @@
                     </view>
                     <connections>
                         <outlet property="label" destination="yoO-e8-f4h" id="Wv2-RM-2H0"/>
-                        <outlet property="loginButton" destination="4zU-ii-scZ" id="ws2-Bv-Ept"/>
-                        <outlet property="mailTextField" destination="oQI-t4-HHc" id="0Az-lI-XLG"/>
-                        <outlet property="passTextField" destination="5QA-3A-0Fg" id="IPN-HV-CCv"/>
+                        <outlet property="loginButton" destination="4zU-ii-scZ" id="046-Qc-Cwg"/>
+                        <outlet property="mailTextField" destination="oQI-t4-HHc" id="VOR-SH-MV8"/>
+                        <outlet property="passTextField" destination="5QA-3A-0Fg" id="zoI-n0-fJy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EL2-Uw-cEf" userLabel="First Responder" sceneMemberID="firstResponder"/>

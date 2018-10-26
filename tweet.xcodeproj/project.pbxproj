@@ -20,6 +20,9 @@
 		B7472604218186FF00ECF47B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7472603218186FF00ECF47B /* Login.storyboard */; };
 		B747260621819D0100ECF47B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B747260521819D0100ECF47B /* MainViewController.swift */; };
 		B74726092181A96700ECF47B /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74726082181A96700ECF47B /* UIColor+hex.swift */; };
+		B747260B2182C80800ECF47B /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B747260A2182C80800ECF47B /* Registration.storyboard */; };
+		B747260D2182C87300ECF47B /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B747260C2182C87300ECF47B /* RegistrationViewController.swift */; };
+		B747260F2182C9E700ECF47B /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B747260E2182C9E700ECF47B /* InputField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		B7472603218186FF00ECF47B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B747260521819D0100ECF47B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B74726082181A96700ECF47B /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
+		B747260A2182C80800ECF47B /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
+		B747260C2182C87300ECF47B /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		B747260E2182C9E700ECF47B /* InputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputField.swift; sourceTree = "<group>"; };
 		F829633CA9D067034C038723 /* Pods_tweet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tweet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -126,6 +132,7 @@
 		B74725CF217C02C300ECF47B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B747260E2182C9E700ECF47B /* InputField.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -152,6 +159,7 @@
 			children = (
 				B747260521819D0100ECF47B /* MainViewController.swift */,
 				B7472600218186EE00ECF47B /* LoginViewController.swift */,
+				B747260C2182C87300ECF47B /* RegistrationViewController.swift */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -161,6 +169,7 @@
 			children = (
 				B74725BF217C01FF00ECF47B /* Main.storyboard */,
 				B7472603218186FF00ECF47B /* Login.storyboard */,
+				B747260A2182C80800ECF47B /* Registration.storyboard */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -233,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B747260B2182C80800ECF47B /* Registration.storyboard in Resources */,
 				B7472604218186FF00ECF47B /* Login.storyboard in Resources */,
 				B74725C6217C020100ECF47B /* LaunchScreen.storyboard in Resources */,
 				B74725C3217C020100ECF47B /* Assets.xcassets in Resources */,
@@ -307,6 +317,8 @@
 				B747260621819D0100ECF47B /* MainViewController.swift in Sources */,
 				B74726092181A96700ECF47B /* UIColor+hex.swift in Sources */,
 				B7472601218186EE00ECF47B /* LoginViewController.swift in Sources */,
+				B747260F2182C9E700ECF47B /* InputField.swift in Sources */,
+				B747260D2182C87300ECF47B /* RegistrationViewController.swift in Sources */,
 				B74725D5217C050C00ECF47B /* ProfileModel.swift in Sources */,
 				B74725D2217C034E00ECF47B /* APIConst.swift in Sources */,
 				B74725DD217E32E900ECF47B /* ErrorMessage.swift in Sources */,

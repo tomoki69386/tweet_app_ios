@@ -40,6 +40,6 @@ class MainViewController: UIViewController {
     }
     
     @IBAction private func registration(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: "toRegistration", sender: nil)
     }
 }

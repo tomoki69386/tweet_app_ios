@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jAx-Rn-yoa">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Registration View Controller-->
+        <scene sceneID="qTd-YG-s4U">
+            <objects>
+                <viewController id="jAx-Rn-yoa" customClass="RegistrationViewController" customModule="tweet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wM3-Q6-1hl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NyG-tm-M4c" customClass="InputField" customModule="tweet" customModuleProvider="target">
+                                <rect key="frame" x="39" y="398" width="298" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.93012005949999998" blue="0.1583358188" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="85X-wM-lEd"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D4b-IX-fBA" customClass="InputField" customModule="tweet" customModuleProvider="target">
+                                <rect key="frame" x="39" y="478" width="298" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.93012005949999998" blue="0.1583358188" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Yrw-vx-TJb"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3o-bs-Vf9">
+                                <rect key="frame" x="39" y="578" width="298" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GwM-sH-Z3N"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vgy-sS-ezw">
+                                <rect key="frame" x="39" y="538" width="298" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Agy-bj-qTu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xm6-uL-38f" customClass="InputField" customModule="tweet" customModuleProvider="target">
+                                <rect key="frame" x="38" y="318" width="298" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.93012005949999998" blue="0.1583358188" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="xsr-iw-0bI"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xm6-uL-38f" firstAttribute="leading" secondItem="5TO-ce-ajl" secondAttribute="leading" constant="38" id="Au1-ND-gRM"/>
+                            <constraint firstItem="NyG-tm-M4c" firstAttribute="leading" secondItem="5TO-ce-ajl" secondAttribute="leading" constant="39" id="C2a-sc-2Rb"/>
+                            <constraint firstItem="Vgy-sS-ezw" firstAttribute="top" secondItem="D4b-IX-fBA" secondAttribute="bottom" constant="10" id="EmC-l8-YPu"/>
+                            <constraint firstItem="D4b-IX-fBA" firstAttribute="top" secondItem="NyG-tm-M4c" secondAttribute="bottom" constant="30" id="FPd-LP-y7L"/>
+                            <constraint firstItem="D4b-IX-fBA" firstAttribute="leading" secondItem="5TO-ce-ajl" secondAttribute="leading" constant="39" id="Gj1-d1-bK7"/>
+                            <constraint firstItem="5TO-ce-ajl" firstAttribute="trailing" secondItem="NyG-tm-M4c" secondAttribute="trailing" constant="38" id="MOv-Ep-2Yo"/>
+                            <constraint firstItem="5TO-ce-ajl" firstAttribute="trailing" secondItem="Vgy-sS-ezw" secondAttribute="trailing" constant="38" id="NLd-T8-J2H"/>
+                            <constraint firstItem="NyG-tm-M4c" firstAttribute="top" secondItem="xm6-uL-38f" secondAttribute="bottom" constant="30" id="YgA-Ld-mmi"/>
+                            <constraint firstItem="5TO-ce-ajl" firstAttribute="trailing" secondItem="D4b-IX-fBA" secondAttribute="trailing" constant="38" id="aHS-rp-VN8"/>
+                            <constraint firstItem="Vgy-sS-ezw" firstAttribute="leading" secondItem="5TO-ce-ajl" secondAttribute="leading" constant="39" id="cHu-ci-Yje"/>
+                            <constraint firstItem="5TO-ce-ajl" firstAttribute="trailing" secondItem="q3o-bs-Vf9" secondAttribute="trailing" constant="38" id="eAv-dg-rZH"/>
+                            <constraint firstItem="q3o-bs-Vf9" firstAttribute="leading" secondItem="5TO-ce-ajl" secondAttribute="leading" constant="39" id="hhw-Uy-rU3"/>
+                            <constraint firstItem="5TO-ce-ajl" firstAttribute="trailing" secondItem="xm6-uL-38f" secondAttribute="trailing" constant="39" id="hnn-Ou-HNr"/>
+                            <constraint firstItem="q3o-bs-Vf9" firstAttribute="top" secondItem="Vgy-sS-ezw" secondAttribute="bottom" constant="10" id="obb-fE-ErL"/>
+                            <constraint firstItem="5TO-ce-ajl" firstAttribute="bottom" secondItem="q3o-bs-Vf9" secondAttribute="bottom" constant="150" id="zDi-6x-2B9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5TO-ce-ajl"/>
+                    </view>
+                    <connections>
+                        <outlet property="RegistrationButton" destination="q3o-bs-Vf9" id="Y63-wI-44J"/>
+                        <outlet property="label" destination="Vgy-sS-ezw" id="boM-C6-8Sf"/>
+                        <outlet property="mailTextField" destination="xm6-uL-38f" id="RRv-5L-DXk"/>
+                        <outlet property="pass1TextField" destination="NyG-tm-M4c" id="2Ma-m7-JJR"/>
+                        <outlet property="pass2TextField" destination="D4b-IX-fBA" id="eD9-Br-T2f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qq0-1j-gVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="331.875" y="-181.69014084507043"/>
+        </scene>
+    </scenes>
+</document>

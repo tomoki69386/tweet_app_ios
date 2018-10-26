@@ -35,7 +35,7 @@
                                 </constraints>
                                 <state key="normal" title="新規登録"/>
                                 <connections>
-                                    <action selector="registration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8JC-7z-Bs2"/>
+                                    <action selector="registration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WLU-Ql-8yw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -55,6 +55,7 @@
                         <outlet property="loginButton" destination="yaI-qR-bbD" id="pjo-H9-MJq"/>
                         <outlet property="registrationButton" destination="fbQ-BA-Pmr" id="4KR-Ee-s7H"/>
                         <segue destination="yHn-bu-SUT" kind="push" identifier="toLogin" id="NHi-H8-0GK"/>
+                        <segue destination="ZuM-kf-7dZ" kind="push" identifier="toRegistration" id="EGw-fL-M5n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -70,6 +71,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pVq-c1-A5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1612" y="91"/>
+        </scene>
+        <!--Registration-->
+        <scene sceneID="5ON-xJ-99O">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Registration" id="ZuM-kf-7dZ" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="GGz-kC-bAM"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n8T-cS-ZMC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1611" y="154"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EfB-Oc-J58">
