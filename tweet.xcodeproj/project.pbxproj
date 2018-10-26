@@ -18,6 +18,8 @@
 		B74725DD217E32E900ECF47B /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74725DC217E32E900ECF47B /* ErrorMessage.swift */; };
 		B7472601218186EE00ECF47B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7472600218186EE00ECF47B /* LoginViewController.swift */; };
 		B7472604218186FF00ECF47B /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7472603218186FF00ECF47B /* Login.storyboard */; };
+		B747260621819D0100ECF47B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B747260521819D0100ECF47B /* MainViewController.swift */; };
+		B74726092181A96700ECF47B /* UIColor+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74726082181A96700ECF47B /* UIColor+hex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		B74725DC217E32E900ECF47B /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		B7472600218186EE00ECF47B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B7472603218186FF00ECF47B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		B747260521819D0100ECF47B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B74726082181A96700ECF47B /* UIColor+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hex.swift"; sourceTree = "<group>"; };
 		F829633CA9D067034C038723 /* Pods_tweet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tweet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,6 +95,7 @@
 				B74725D0217C02C900ECF47B /* StoryBoard */,
 				B74725CF217C02C300ECF47B /* Model */,
 				B74725CE217C02BD00ECF47B /* View */,
+				B74726072181A95400ECF47B /* Extension */,
 				B74725CD217C02B200ECF47B /* API */,
 				B74725C2217C020100ECF47B /* Assets.xcassets */,
 				B74725C7217C020100ECF47B /* Info.plist */,
@@ -130,7 +135,6 @@
 			children = (
 				B7472602218186F500ECF47B /* Main */,
 				B74725C4217C020100ECF47B /* LaunchScreen.storyboard */,
-				B74725BF217C01FF00ECF47B /* Main.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -146,6 +150,7 @@
 		B74725FF218186E200ECF47B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				B747260521819D0100ECF47B /* MainViewController.swift */,
 				B7472600218186EE00ECF47B /* LoginViewController.swift */,
 			);
 			name = Main;
@@ -154,9 +159,18 @@
 		B7472602218186F500ECF47B /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				B74725BF217C01FF00ECF47B /* Main.storyboard */,
 				B7472603218186FF00ECF47B /* Login.storyboard */,
 			);
 			name = Main;
+			sourceTree = "<group>";
+		};
+		B74726072181A95400ECF47B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B74726082181A96700ECF47B /* UIColor+hex.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +253,8 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-tweet/Pods-tweet-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
@@ -248,6 +264,8 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
@@ -286,6 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B747260621819D0100ECF47B /* MainViewController.swift in Sources */,
+				B74726092181A96700ECF47B /* UIColor+hex.swift in Sources */,
 				B7472601218186EE00ECF47B /* LoginViewController.swift in Sources */,
 				B74725D5217C050C00ECF47B /* ProfileModel.swift in Sources */,
 				B74725D2217C034E00ECF47B /* APIConst.swift in Sources */,
@@ -441,6 +461,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FJMPLD4D4X;
 				INFOPLIST_FILE = tweet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,6 +481,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FJMPLD4D4X;
 				INFOPLIST_FILE = tweet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

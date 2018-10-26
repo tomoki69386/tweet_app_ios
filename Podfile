@@ -11,5 +11,7 @@ target 'tweet' do
   pod 'SnapKit'
   pod 'SDWebImage'
   pod 'SwiftyUserDefaults'
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
 end

@@ -7,24 +7,61 @@
 //
 
 import UIKit
+import Alamofire
 
 class LoginViewController: UIViewController {
+    
+    @IBOutlet weak var mailTextField: UITextField!
+    @IBOutlet weak var passTextField: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var label: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        navigationItem.title = "ログイン"
+        setUI()
     }
     
+    private func setUI() {
+        mailTextField.placeholder = "メールアドレス"
+        mailTextField.textAlignment = .center
+        mailTextField.layer.borderWidth = 1
+        mailTextField.layer.borderColor = UIColor.gray.cgColor
+        mailTextField.backgroundColor = .white
+        mailTextField.layer.cornerRadius = mailTextField.frame.height / 2
+        mailTextField.delegate = self
+        mailTextField.keyboardType = .emailAddress
+        
+        passTextField.placeholder = "パスワード"
+        passTextField.textAlignment = .center
+        passTextField.layer.borderWidth = 1
+        passTextField.layer.borderColor = UIColor.gray.cgColor
+        passTextField.backgroundColor = .white
+        passTextField.layer.cornerRadius = passTextField.frame.height / 2
+        passTextField.delegate = self
+        passTextField.keyboardType = .namePhonePad
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        loginButton.setTitle("ログイン", for: .normal)
+        loginButton.setTitleColor(.white, for: .normal)
+        loginButton.backgroundColor = .main
+        loginButton.layer.cornerRadius = loginButton.frame.height / 2
+        
+        label.textColor = .main
+        label.font = UIFont.systemFont(ofSize: 15)
+        label.text = "メールアドレスを入力してください"
+        
+        view.backgroundColor = .bg
     }
-    */
+    
+    @IBAction private func login(_ sender: UIButton) {
+        
+    }
+}
 
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }

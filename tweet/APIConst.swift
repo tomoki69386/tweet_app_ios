@@ -10,6 +10,7 @@ import Foundation
 
 struct APIConst {
     static let ApiHost = "http://localhost:3000"
-    static let ProfileUrl: String = ApiHost + "/api/v1/users"
+    static let ProfileUrl: String = ApiHost + "/api/v1/users/show"
     static let userImage: String = ApiHost + "/user_images/"
+    static let login: String = ApiHost + "/api/v1/users/login"
 }
